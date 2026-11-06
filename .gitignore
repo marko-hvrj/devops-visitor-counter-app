@@ -1,0 +1,36 @@
+
+# macOS system files
+.DS_Store
+.AppleDouble
+._*
+
+# Python bytecode and cache
+__pycache__/
+*.py[cod]
+
+# Python virtual environments
+.venv/
+venv/
+env/
+
+# Python packaging and build artifacts
+build/
+dist/
+*.egg-info/
+
+# Testing, linting and coverage
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Local environment configuration
+.env
+.env.*
+!.env.example
+
+# Flask local instance data
+instance/
+
+# Local editor settings
+.vscode/
