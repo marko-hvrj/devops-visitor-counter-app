@@ -1,10 +1,18 @@
 import os
 import socket
 import redis
+import logging
+import sys
 from flask import Flask, jsonify
 from redis.exceptions import ConnectionError
 
 app = Flask(__name__)
+
+logging.basicConfig(
+    stream=sys.stdout,
+    level=logging.INFO,
+    force=True
+)
 
 redis_client = redis.Redis(
     host = os.environ["REDIS_HOST"],

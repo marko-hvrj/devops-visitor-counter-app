@@ -34,3 +34,6 @@ instance/
 
 # Local editor settings
 .vscode/
+
+# stdout and stderr log files
+*.log
