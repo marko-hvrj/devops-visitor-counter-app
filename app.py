@@ -1,8 +1,9 @@
+import logging
 import os
 import socket
-import redis
-import logging
 import sys
+
+import redis
 from flask import Flask, jsonify
 from redis.exceptions import ConnectionError
 
